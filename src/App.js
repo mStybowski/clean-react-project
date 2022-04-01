@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import SearchParams from "./SearchParams";
 import Pet from "./Pet";
 
 const App = () => {
@@ -7,8 +8,7 @@ const App = () => {
     <div>
       <h1>Adopt me!</h1>
       <Pet name="Luna" animal="Dog" breed="Havanese" />
-      <Pet name="Luna" animal="Dog" breed="Havanese" />
-      <Pet name="Luna" animal="Dog" breed="Havanese" />
+      <SearchParams />
     </div>
   );
 };
