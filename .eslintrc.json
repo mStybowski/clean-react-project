@@ -1,16 +1,16 @@
 {
   "extends": [
     "eslint:recommended",
-    // "plugin:import/errors",
-    // "plugin:react/recommended",
-    // "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended", // accessibility
     "prettier"
   ],
   "rules": {
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0
   },
-  "plugins": [],
+  "plugins": ["react", "import", "jsx-a11y"], // react for react stuff, import for import stuff, a11y for accessibility
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module",
@@ -25,7 +25,7 @@
   },
   "settings": {
     "react": {
-      "version": "detect"
+      "version": "detect" // look for the react version at package.json
     }
   }
 }
